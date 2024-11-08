@@ -1,0 +1,11 @@
+# MacOS
+.DS_Store
+
+# WebStorm
+.idea/
+
+# Firebase Hosting
+node_modules
+.firebase/*
+**/*.d.ts
+demo/.firebase/hosting.*.cache
