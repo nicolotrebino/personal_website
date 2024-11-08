@@ -1,0 +1,156 @@
+/*-----------------------------------*\
+  # style.css
+\*-----------------------------------*/
+
+/*-----------------------------------*\
+  # CUSTOM PROPERTY
+\*-----------------------------------*/
+:root {
+
+    /**
+    colors
+     */
+
+    /* solid */
+
+    /* ever green */
+    --white: rgba(255,255,255,255);
+    --black: rgba(0, 0, 0, 255);
+
+    /* light mode */
+    --anti-flash-white: rgba(229,232,234,255);
+    --seasalt: rgba(250,250,252,255);
+
+    /* dark mode */
+    --rich-black: rgba(2,7,18,255);
+    --rich-blue: rgba(18,24,39,255);
+    --gunmetal: rgba(31,40,55,255);
+    --charcoal: rgba(55,64,81,255);
+
+    /**
+    typography
+     */
+
+    /* font-weight */
+    --fw-300: 300;
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-600: 600;
+}
+
+/*-----------------------------------*\
+  # RESET
+\*-----------------------------------*/
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Desktop (default) */
+html {
+    font-size: 16px;
+}
+
+/* Tablet (up to 768px) */
+@media (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+/* Mobile (up to 480px) */
+@media (max-width: 480px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+body {
+    font-family: Inter;
+    /* background-color: var(--white); */
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory; /* Effetto di snapping verticale */
+    overflow-y: scroll; /* Permettiamo lo scrolling verticale */
+    height: 100vh;
+}
+
+
+button {
+    font: inherit;
+    background: none;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+i { color: var(--black)}
+
+.inter {
+    font-family: Inter;
+}
+
+.bold {
+    font-weight: var(--fw-500);
+}
+
+/*-----------------------------------*\
+  # IMPORTANT CLASSES
+\*-----------------------------------*/
+
+.section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    scroll-snap-align: start;
+    color: var(--black);
+}
+
+.section-indicator {
+    padding: 0.5rem 1rem;
+    border-radius: 1rem; /* Rounded button */
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    font-size: 1rem !important;
+}
+
+/*-----------------------------------*\
+  # HEADER
+\*-----------------------------------*/
+
+.my-logo {
+    font-size: 1.5rem;
+}
+
+.dropdown-item:active {
+    background-color: transparent;
+}
+
+/*-----------------------------------*\
+  # FOOTER
+\*-----------------------------------*/
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+/* Responsive styles for social links */
+@media (max-width: 768px) {
+    .social-links li {
+        display: block; /* Arrange icons vertically */
+        margin: 0.5rem 0; /* Add some spacing between icons */
+    }
+}

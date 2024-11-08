@@ -1,0 +1,54 @@
+.icon-animation {
+    opacity: 0;
+    animation: rainbowFadeIn 1s ease-in-out forwards;
+}
+
+/* Create staggered animation delay for each icon */
+.icon-animation:nth-child(1) { animation-delay: 0.3s; }
+.icon-animation:nth-child(2) { animation-delay: 0.6s; }
+.icon-animation:nth-child(3) { animation-delay: 0.9s; }
+.icon-animation:nth-child(4) { animation-delay: 1.2s; }
+.icon-animation:nth-child(5) { animation-delay: 1.5s; }
+.icon-animation:nth-child(6) { animation-delay: 1.8s; }
+.icon-animation:nth-child(7) { animation-delay: 2.1s; }
+
+/* Keyframes for rainbow fade in animation with 7 colors */
+@keyframes rainbowFadeIn {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+        color: #ffc300; /* Yellow */
+    }
+    15% {
+        color: #ff8e1e; /* Orange */
+    }
+    30% {
+        color: #ff5733; /* Red */
+    }
+    45% {
+        color: #33ff57; /* Green */
+    }
+    60% {
+        color: #33cfff; /* Light Blue */
+    }
+    75% {
+        color: #3357ff; /* Blue */
+    }
+    90% {
+        color: #6c757d; /* Bootstrap Dark (Gray) */
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+        color: #343a40; /* Bootstrap Dark (Almost black) */
+    }
+}
+
+.project-card img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+.card-link {
+    font-size: 14px;
+}

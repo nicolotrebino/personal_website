@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/home.css">
+
+    <title>Nicolò's Portfolio</title>
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar navbar-expand-lg fixed-top bg-light">
+    <div class="container">
+        <!-- Logo -->
+        <h1 class="navbar-brand my-logo"><a href="home.html">&lt;NT/&gt;</a></h1>
+
+        <!-- Toggle menu button for mobile navigation -->
+        <button class="navbar-toggler d-lg-none d-flex justify-content-center align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="navbarToggler">
+            <span class="navbar-toggler-icon" id="open-icon"></span>
+            <span class="btn-close d-none" id="close-icon"></span>
+        </button>
+
+        <!-- Navigation links -->
+        <nav class="collapse navbar-collapse py-3 py-lg-0" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-center text-dark">
+                <li class="nav-item dropdown-center px-1 d-flex flex-column justify-content-center align-items-center">
+                    <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Home
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item text-center"><a class="nav-link" href="#about">About</a></li>
+                        <li class="dropdown-item text-center"><a class="nav-link" href="#skills">Skills</a></li>
+                        <li class="dropdown-item text-center"><a class="nav-link" href="#experiences">Experience</a></li>
+                        <li class="dropdown-item text-center"><a class="nav-link" href="#education">Education</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item px-1">
+                    <a class="nav-link text-dark" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item px-3">
+                    <a class="nav-link text-dark" href="workinprogress.html">Blog</a>
+                </li>
+                <li class="nav-item px-1">
+                    <a class="nav-link text-dark" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item px-1 ms-2">
+                    <a href="../assets/my_cv.pdf" class="btn btn-dark download-cv" download="nicolotrebino_cv">Download CV</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Hero section -->
+<section class="container-fluid d-flex row align-items-center min-vh-100 p-5" id="hero">
+    <div class="col-12 col-md-6 order-2 order-md-1 d-flex flex-column justify-content-center p-4">
+        <h2 class="display-4 bold">Hi, I'm Nicolò 👋</h2>
+        <p class="mt-3">
+            I'm an Italian computer engineering graduate with a passion for technology, currently pursuing a Master's in Artificial Intelligence.
+            <br> I have hands-on experience in developing mobile apps, websites, and games using Unreal Engine.
+            <br> I'm also a volleyball coach and actively involved in sitting volleyball, promoting inclusivity through sport.
+            <br> Always eager to learn and take on new challenges, I’m excited to explore innovative projects.
+        </p>
+        <p class="mt-3">
+            <i class="fas fa-map-marker-alt fa-sm me-1"></i> Genova, Italy
+            <br>
+            <i class="fas fa-circle fa-2xs me-1" id="availability"></i> Available for new projects
+        </p>
+        <ul class="list-unstyled d-flex mt-3">
+            <li class="me-3"><a href="https://www.linkedin.com/in/nicolò-trebino-624620303/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in fa-xl"></i></a></li>
+            <li class="me-3"><a href="https://github.com/nicolotrebino" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github fa-xl"></i></a></li>
+            <li class="me-3"><a href="https://www.instagram.com/nikytrebino/" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram fa-xl"></i></a></li>
+        </ul>
+    </div>
+    <div class="col-12 col-md-6 d-flex justify-content-center p-4 order-1 order-md-2">
+        <img src="../assets/pic_hero.jpeg" alt="Nicolò's profile picture" class="img-fluid">
+    </div>
+</section>
+
+<!-- About section -->
+<section class="container-fluid d-flex justify-content-center flex-column align-items-center p-5 bg-light" id="about">
+    <div class="section-indicator bg-secondary-subtle">About</div>
+    <div class="d-flex row align-items-center p-5">
+        <div class="col-12 col-lg-6 d-flex justify-content-center p-4">
+            <img src="../assets/pic_about.jpg" alt="Nicolò's picture" class="img-fluid">
+        </div>
+        <div class="col-12 col-lg-6 d-flex flex-column justify-content-center p-1 p-md-5">
+            <h3>Curious about me? Here you have it:</h3>
+            <p>
+                I'm an Italian computer engineering graduate with a strong passion for technology, sparked by my early interest in videogames,
+                the web, and new innovations. During my Bachelor's degree in Computer Engineering,
+                I had the opportunity to dive deep into various projects, dedicating myself fully to creating mobile applications, websites, and even developing a game using Unreal Engine.
+                These experiences have shaped my technical skills and fueled my excitement for what lies ahead as I pursue a Master's degree in Artificial Intelligence.
+            </p>
+            <p> Outside of tech, sports have always been a big part of my life, especially volleyball.
+                Over time, I transitioned from being a player to a coach, learning valuable lessons in teamwork and leadership. I’m also involved in sitting volleyball,
+                a unique form of Paralympic volleyball that brings together able-bodied and disabled players, fostering inclusivity and making the sport even more meaningful.
+            </p>
+            <p> I'm always eager to work on new projects and challenges, with a strong commitment to continuous learning and skill development.
+                I look forward to exploring new opportunities and contributing to innovative solutions.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Skills section -->
+<section class="container-fluid d-flex justify-content-center flex-column align-items-center p-5" id="skills">
+    <div class="section-indicator bg-secondary-subtle">Skills</div>
+    <h3> The skills, tools, and technologies I am really good at:</h3>
+    <div class="d-flex row align-items-center g-4 mt-3"> <!-- Bootstrap row with gap -->
+        <div class="col-6 col-md-4 col-lg-2 d-flex flex-column align-items-center">
+            <img src="../assets/logo_js.png" alt="Javascript logo" class="img-fluid skill-logo">
+            <p class="mt-3">Javascript</p>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 d-flex flex-column align-items-center">
+            <img src="../assets/logo_kotlin.png" alt="Kotlin logo" class="img-fluid skill-logo">
+            <p class="mt-3">Kotlin</p>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 d-flex flex-column align-items-center">
+            <img src="../assets/logo_python.png" alt="Python logo" class="img-fluid skill-logo">
+            <p class="mt-3">Python</p>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 d-flex flex-column align-items-center">
+            <img src="../assets/logo_C.png" alt="C logo" class="img-fluid skill-logo">
+            <p class="mt-3">C</p>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 d-flex flex-column align-items-center">
+            <img src="../assets/logo_C++.png" alt="C++ logo" class="img-fluid skill-logo">
+            <p class="mt-3">C++</p>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 d-flex flex-column align-items-center">
+            <img src="../assets/logo_php.png" alt="PHP logo" class="img-fluid skill-logo">
+            <p class="mt-3">PHP</p>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 d-flex flex-column align-items-center">
+            <img src="../assets/logo_unreal.png" alt="Unreal Engine logo" class="img-fluid skill-logo">
+            <p class="mt-3">Unreal Engine</p>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 d-flex flex-column align-items-center">
+            <img src="../assets/logo_node.png" alt="Sass/Scss logo" class="img-fluid skill-logo">
+            <p class="mt-3">Node.js</p>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 d-flex flex-column align-items-center">
+            <img src="../assets/logo_arduino.png" alt="Figma logo" class="img-fluid skill-logo">
+            <p class="mt-3">Arduino IDE</p>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 d-flex flex-column align-items-center">
+            <img src="../assets/logo_cube.png" alt="Tailwindcss logo" class="img-fluid skill-logo">
+            <p class="mt-3">STM32Cube IDE</p>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 d-flex flex-column align-items-center">
+            <img src="../assets/logo_matlab.png" alt="Cypress logo" class="img-fluid skill-logo">
+            <p class="mt-3">Matlab</p>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 d-flex flex-column align-items-center">
+            <img src="../assets/logo_git.png" alt="Nest.js logo" class="img-fluid skill-logo">
+            <p class="mt-3">Git</p>
+        </div>
+    </div>
+</section>
+
+<!-- Experience section -->
+<section class="container-fluid text-center active p-5 bg-light" id="experiences">
+    <div>
+        <span class="arrow  invisible ms-3"><i class="fa-solid fa-chevron-left"></i></span>
+        <div class="section-indicator bg-secondary-subtle">Experience</div>
+        <span class="arrow invisible ms-3"><i class="fa-solid fa-chevron-right" id="arrow-right"></i></span>
+    </div>
+    <h3>Here is a quick summary of my most recent experiences:</h3>
+    <div class="row d-flex justify-content-center">
+        <!-- Card 4 -->
+        <div class="card experiences-card col-12 mb-4 p-3">
+            <div class="row">
+                <div class="col-12 col-md-3 d-flex flex-column justify-content-center align-items-center mb-3 mb-md-0">
+                    <div class="mb-2">
+                        <img src="../assets/logo_volley_uscio.png" alt="Volley Uscio logo" class="image-fluid experience-logo">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 text-center text-md-start">
+                    <h4>Volleyball Coach</h4>
+                    <ul class="text-start text-card">
+                        <li>Volley Uscio Ferrada, Part time</li>
+                        <li>Uscio, Liguria, Italy - On site</li>
+                        <li><a class="link-card" href="https://www.instagram.com/proreccopallavolo/" target="_blank" rel="noopener noreferrer"><i>About this volleyball club</i></a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3 d-none d-md-flex justify-content-center align-items-start">
+                    <p>Sep 2024 - Present</p>
+                </div>
+                <div class="description-card d-none">
+                    <p>
+                        This year, I'm coaching young athletes aged 5 to 16, guiding them through various FIPAV championships, including U13, U15 boys, and U16 girls,
+                        and organizing training sessions and tournaments for the youngest players. I had the great opportunity to kick off this season by taking the team
+                        to a summer camp in the mountains, where we focused on volleyball, fun activities, and hiking.
+                        <br>
+                        This experience has enriched me in many ways—personally, socially, and professionally.
+                        It challenges me to grow as a coach, build strong, cohesive teams, and foster positive relationships with the players.
+                        My goal is to help them improve in the sport and provide life skills that extend beyond the court.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="card experiences-card col-12 mb-4 p-3">
+            <div class="row">
+                <div class="col-12 col-md-3 d-flex flex-column justify-content-center align-items-center mb-3 mb-md-0">
+                    <div class="mb-2">
+                        <img src="../assets/logo_unige2.png" alt="Company 1 logo" class="img-fluid experience-logo">
+                        <img src="../assets/logo_manager_italia.png" alt="Company 1 logo" class="img-fluid experience-logo">
+                    </div>
+                    <div class="d-md-none text-center">
+                        <p>May 2024</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 text-center text-md-start">
+                    <h4>Voglio fare il manager!</h4>
+                    <ul class="text-start text-card">
+                        <li>Project in collaboration with the University of Genova and <a class="link-card" href="https://www.manageritalia.it" target="_blank" rel="noopener noreferrer"><i>Manager Italia</i></a></li>
+                        <li>Training webinars and company activities</li>
+                        <li>Experience at <a class="link-card" href="https://www.ericsson.com/" target="_blank" rel="noopener noreferrer"><i>Ericsson</i></a> R&D, Genova</li>
+                        <li>Experience at <a class="link-card" href="https://www.gruppoboero.it" target="_blank" rel="noopener noreferrer"><i>Boero Group</i></a> HR and IT, Genova</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3 d-none d-md-flex justify-content-center align-items-start">
+                    <p>May 2024</p>
+                </div>
+                <div class="description-card d-none">
+                    <p>
+                        During my participation in the "Voglio Fare il Manager" project, in collaboration with the University of Genova,
+                        I had the opportunity to immerse myself in the world of management through both training and hands-on experience at prominent companies.
+                        This initiative aimed to introduce young professionals like myself to the intricacies of managerial roles and provide practical knowledge to enhance our career prospects.
+                    </p>
+                    <h6>Ericsson, Genova</h6>
+                    <p> I spent a period working within the Research & Development (R&D) department at Ericsson in Genova.
+                        This experience was truly eye-opening, as I gained a deep understanding of how a leading global company operates.
+                        I explored the company’s innovative technologies and methodologies, which offered me valuable insights into the future of technology and the dynamics of a large-scale enterprise.
+                    </p>
+
+                    <h6>Boero Group, Genova</h6>
+                    <p> My time at Boero Group, particularly within the HR and IT departments, was equally enlightening.
+                        I learned about the strategic and operational aspects of HR management and saw firsthand how the IT department supports and integrates with the larger business functions.
+                        This experience allowed me to appreciate the complexities and synergies involved in managing these crucial areas within a major organization.
+                    </p>
+
+                    <p> I would like to extend my heartfelt thanks to all the people who took the time to explain and guide me through their respective companies.
+                        Their patience and willingness to act as true mentors made this experience incredibly enriching.
+                    </p>
+
+                    <p>Overall, this project was an invaluable experience that not only expanded my knowledge but also enhanced my professional network.
+                        I connected with many remarkable individuals and gained a clearer vision of my career path in management.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="card experiences-card col-12 mb-4 p-3">
+            <div class="row">
+                <div class="col-12 col-md-3 d-flex flex-column justify-content-center align-items-center mb-3 mb-md-0">
+                    <div class="mb-2">
+                        <img src="../assets/logo_trebino.png" alt="Company 1 logo" class="img-fluid experience-logo">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 text-center text-md-start">
+                    <h4>Trebino s.n.c.</h4>
+                    <ul class="text-start text-card">
+                        <li>Trebino s.n.c., Internship</li>
+                        <li><a class="link-card" href="https://www.trebino.it" target="_blank" rel="noopener noreferrer"><i>About this company</i></a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3 d-none d-md-flex justify-content-center align-items-start">
+                    <p>Sep 2024 - Present</p>
+                </div>
+                <div class="description-card d-none">
+                    <p>At Trebino, a historic clock and bell manufacturer in Uscio, Liguria, I have engaged in a formative work experience that blends personal development with practical contributions to the family business.
+                        Established over 200 years ago, Trebino is a storied company in the "Valley of Time," and my involvement has allowed me to work across various roles and gain diverse skills.
+
+                        In my time at Trebino, I have taken on several key responsibilities:
+                    </p>
+                    <ul>
+                        <li> <b>CAD Design</b>: I taught myself Autocad to create professional CAD projects for our artisans, enhancing the precision and efficiency of our production processes.
+                        <li> <b>Mechanical Support</b>: I assist with the assembly and maintenance of mechanical components, ensuring the optimal functionality of our timepieces and bells.
+                        <li> <b>Digital and Social Media Management</b>: I contribute to the company's digital presence and manage social media platforms, helping to modernize our outreach and engagement strategies.
+                        <li> <b>Technical and IT Management</b>: I also oversee the company's technical IT decisions, helping guide Trebino through a gradual, yet essential, technological transition to ensure future growth and modernization.</li>
+                        <li> <b>Academic Collaboration</b>: For my undergraduate thesis, I developed an application and circuit to manage bell installations in a flexible and user-friendly manner, bridging traditional craftsmanship with modern technology.
+                    </ul>
+                    <p>
+                        This role has provided me with a unique opportunity to integrate advanced technical skills with hands-on experience in a traditional industry, positioning me at the intersection of historical craftsmanship and contemporary innovation.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Card 1 -->
+        <div class="card experiences-card col-12 mb-4 p-3">
+            <div class="row">
+                <div class="col-12 col-md-3 d-flex flex-column justify-content-center align-items-center mb-3 mb-md-0">
+                    <div class="mb-2">
+                        <img src="../assets/logo_pro_recco.png" alt="Company 1 logo" class="image-fluid experience-logo">
+                    </div>
+                    <div class="d-md-none text-center">
+                        <p>Sep 2021 - Jul 2022</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 text-center text-md-start">
+                    <h4>Volleyball Coach</h4>
+                    <ul class="text-start text-card">
+                        <li>Pro Recco Pallavolo, Part time</li>
+                        <li>Recco, Liguria, Italy - On site</li>
+                        <li><a class="link-card" href="https://www.instagram.com/proreccopallavolo/" target="_blank" rel="noopener noreferrer"><i>About this volleyball club</i></a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3 d-none d-md-flex justify-content-center align-items-start">
+                    <p>Sep 2021 - Jul 2022</p>
+                </div>
+                <div class="description-card d-none">
+                    <p>
+                        I had the rewarding experience of coaching a group of children and adolescents across various FIPAV categories, including Green, Red, and White.
+                        My role extended beyond basic training, as I focused on nurturing both the skills and the personal development of each player.
+                        <br> - I coached the younger group (ages 6-8) in preparation for the various Gran Prix events.
+                        These events provided a platform for the children to experience the excitement of competition while developing their foundational volleyball skills.
+                        <br> - I served as the head coach for the older group (ages 9-12), guiding them through the Under 12 category.
+                        My role involved creating and executing training programs that focused on skill development, teamwork, and sportsmanship.
+                        <br> I also held the certification of Smart Coach, ensuring that my coaching methods were in line with the latest youth development standards.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="invisible">
+        <span class="arrow  invisible ms-3"><i class="fa-solid fa-chevron-left"></i></span>
+        <span class="ms-3"><i class="fas fa-circle fa-2xs"></i></span>
+        <span class="ms-3"><i class="fas fa-circle fa-2xs not-displayed"></i></span>
+        <span class="arrow ms-3"><i class="fa-solid fa-chevron-right" id="chevron-right"></i></span>
+    </div>
+</section>
+
+<!-- Education section -->
+<section class="container-fluid text-center p-5" id="education">
+    <div>
+        <span class="arrow invisible me-3"><i class="fa-solid fa-chevron-left" id="arrow-left"></i></span>
+        <div class="section-indicator bg-secondary-subtle">Education</div>
+        <span class="arrow invisible ms-3"><i class="fa-solid fa-chevron-right"></i></span>
+    </div>
+    <h3>Here is a quick summary of my education:</h3>
+    <div class="row d-flex justify-content-center">
+        <!-- Card 1 -->
+        <div class="card education-card col-12 mb-4 p-3 bg-light">
+            <div class="row">
+                <div class="col-12 col-md-3 d-flex flex-column justify-content-center align-items-center mb-3 mb-md-0">
+                    <div class="mb-2">
+                        <img src="../assets/logo_unige.jpeg" alt="Company 1 logo" class="img-fluid education-logo">
+                    </div>
+                    <div class="d-md-none text-center">
+                        <p>Sep 2024 - Present</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 text-center text-md-start">
+                    <h4>Università degli Studi di Genova</h4>
+                    <ul class="text-start text-card">
+                        <li>Master's degree, Artificial Intelligence and Human-Centered Computing</li>
+                        <li><a class="link-card" href="https://unige.it" target="_blank" rel="noopener noreferrer"><i>About this university</i></a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3 d-none d-md-flex justify-content-center align-items-start">
+                    <p>Sep 2024 - Present</p>
+                </div>
+            </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="card education-card col-12 mb-4 p-3 bg-light">
+            <div class="row">
+                <div class="col-12 col-md-3 d-flex flex-column justify-content-center align-items-center mb-3 mb-md-0">
+                    <div class="mb-2">
+                        <img src="../assets/logo_unige.jpeg" alt="Company 1 logo" class="img-fluid education-logo">
+                    </div>
+                    <div class="d-md-none text-center">
+                        <p>Sep 2021 - Sep 2024</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 text-center text-md-start">
+                    <h4>Università degli Studi di Genova</h4>
+                    <ul class="text-start text-card">
+                        <li>Bachelor's degree, Computer engineering</li>
+                        <li>Grade: 110 cum laude / 110</li>
+                        <li>About my thesis (COMING SOON!)</li>
+                        <li><a class="link-card" href="https://unige.it" target="_blank" rel="noopener noreferrer"><i>About this university</i></a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3 d-none d-md-flex justify-content-center align-items-start">
+                    <p>Sep 2021 - Sep 2024</p>
+                </div>
+            </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="card education-card col-12 mb-4 p-3 bg-light">
+            <div class="row">
+                <div class="col-12 col-md-3 d-flex flex-column justify-content-center align-items-center mb-3 mb-md-0">
+                    <div class="mb-2">
+                        <img src="../assets/logo_nicoloso.svg" alt="Company 1 logo" class="image-fluid education-logo">
+                    </div>
+                    <div class="d-md-none text-center">
+                        <p>Sep 2016 - Jun 2021</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 text-center text-md-start">
+                    <h4>Liceo Scientifico Da Vigo - Nicoloso da Recco</h4>
+                    <ul class="text-start text-card">
+                        <li>High school diploma, Scientifico</li>
+                        <li>Grade: 98 / 100</li>
+                        <li>About my final exam (COMING SOON!)</li>
+                        <li><a class="link-card" href="https://www.davigonicoloso.edu.it" target="_blank" rel="noopener noreferrer"><i>About this school</i></a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3 d-none d-md-flex justify-content-center align-items-start">
+                    <p>Sep 2016 - Jun 2021</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="invisible">
+        <span class="arrow ms-3"><i class="fa-solid fa-chevron-left" id="chevron-left"></i></span>
+        <span class="ms-3"><i class="fas fa-circle fa-2xs not-displayed"></i></span>
+        <span class="ms-3"><i class="fas fa-circle fa-2xs"></i></span>
+        <span class="arrow invisible ms-3"><i class="fa-solid fa-chevron-right"></i></span>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-light py-3 text-center">
+    <div class="container">
+        <!-- Social media icons -->
+        <div class="mb-2">
+            <a href="https://www.linkedin.com/in/nicolò-trebino-624620303/" class="text-dark me-3" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin fa-lg"></i></a>
+            <a href="https://github.com/nicolotrebino" class="text-dark me-3" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github fa-lg"></i></a>
+            <a href="https://www.instagram.com/nikytrebino/" class="text-dark" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram fa-lg"></i></a>
+        </div>
+
+        <!-- Copyright notice -->
+        <p class="text-muted mb-0 mt-3">
+            © 2024 Nicolò Trebino. All rights reserved.
+        </p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/7dfd240d49.js" crossorigin="anonymous"></script>
+<script src="../js/script.js"></script>
+<script src="../js/home.js"></script>
+
+</body>
+</html>

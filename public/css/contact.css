@@ -1,0 +1,8 @@
+.container-lg {
+    max-width: 960px ;!important;
+}
+
+#pic {
+    width: 9rem;
+    height: auto;
+}
