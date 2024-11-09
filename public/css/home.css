@@ -1,4 +1,17 @@
 /*-----------------------------------*\
+  # GENERAL USAGE
+\*-----------------------------------*/
+
+.section-indicator {
+    padding: 0.5rem 1rem;
+    border-radius: 1rem; /* Rounded button */
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    font-size: 1rem !important;
+}
+
+/*-----------------------------------*\
   # HERO SECTION
 \*-----------------------------------*/
 

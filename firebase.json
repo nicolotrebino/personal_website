@@ -1,5 +1,15 @@
 {
   "hosting": {
+    "rewrites": [
+      {
+        "source": "/assets/**",
+        "destination": "/html/home.html"
+      },
+      {
+        "source": "/assets",
+        "destination": "/html/home.html"
+      }
+    ],
     "public": "public",
     "ignore": [
       "firebase.json",

@@ -71,8 +71,8 @@ body {
     font-family: Inter;
     /* background-color: var(--white); */
     scroll-behavior: smooth;
-    scroll-snap-type: y mandatory; /* Effetto di snapping verticale */
-    overflow-y: scroll; /* Permettiamo lo scrolling verticale */
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
     height: 100vh;
 }
 
@@ -113,15 +113,6 @@ i { color: var(--black)}
     font-size: 1rem;
     scroll-snap-align: start;
     color: var(--black);
-}
-
-.section-indicator {
-    padding: 0.5rem 1rem;
-    border-radius: 1rem; /* Rounded button */
-    text-align: center;
-    display: inline-block;
-    margin-bottom: 1.5rem;
-    font-size: 1rem !important;
 }
 
 /*-----------------------------------*\
