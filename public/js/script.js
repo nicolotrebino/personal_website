@@ -1,5 +1,13 @@
 // script.js
 
+document.addEventListener("DOMContentLoaded", function() {
+    const link = document.createElement("link");
+    link.rel = "icon";
+    link.href = "../assets/favicon_nt.png";
+    link.type = "image/x-icon";
+    document.head.appendChild(link);
+});
+
 // Close mobile menu during scroll
 document.addEventListener("DOMContentLoaded", function() {
     const navbarCollapse = document.getElementById('navbarNav');
