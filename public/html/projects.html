@@ -18,278 +18,284 @@
 
     <title>Projects</title>
 </head>
-<body>
+<body class="d-flex flex-column align-items-center">
 
 <!-- Navbar -->
 <header id="navbar"></header>
 
 <!-- Main Section -->
-<section class="vh-100 d-flex flex-column justify-content-center align-items-space-around bg-light text-dark text-center">
+<section class="container-fluid bg-light">
+    <div class="container vh-100 d-flex flex-column justify-content-center align-items-space-around text-dark text-center">
 
-    <!-- Icons that will animate in a rainbow effect -->
-    <div class="d-flex justify-content-center mb-4">
-        <i class="fas fa-laptop-code fa-2x mx-3 icon-animation"></i>
-        <i class="fas fa-mobile-alt fa-2x mx-3 icon-animation"></i>
-        <i class="fas fa-cogs fa-2x mx-3 icon-animation"></i>
-        <i class="fas fa-database fa-2x mx-3 icon-animation"></i>
-        <i class="fas fa-cloud fa-2x mx-3 icon-animation"></i>
-    </div>
+        <!-- Icons that will animate in a rainbow effect -->
+        <div class="d-flex justify-content-center mb-4">
+            <i class="fas fa-laptop-code fa-2x mx-3 icon-animation"></i>
+            <i class="fas fa-mobile-alt fa-2x mx-3 icon-animation"></i>
+            <i class="fas fa-cogs fa-2x mx-3 icon-animation"></i>
+            <i class="fas fa-database fa-2x mx-3 icon-animation"></i>
+            <i class="fas fa-cloud fa-2x mx-3 icon-animation"></i>
+        </div>
 
-    <div>
-        <h1 class="display-3 fw-bold">Welcome to My Projects</h1>
-        <p class="lead fs-4">Explore my portfolio and dive into my latest creations.</p>
-        <button class="btn btn-outline-dark btn-lg mt-4" onclick="scrollToProjects()">See My Projects</button>
+        <div>
+            <h1 class="display-3 fw-bold">Welcome to My Projects</h1>
+            <p class="lead fs-4">Explore my portfolio and dive into my latest creations.</p>
+            <button class="btn btn-outline-dark btn-lg mt-4" onclick="scrollToProjects()">See My Projects</button>
+        </div>
     </div>
 </section>
 
 <!-- Projects Section -->
-<section class="container py-5" id="projects">
-<div class="text-center">
-    <h2 class="display-5">My Projects</h2>
-    <p class="lead">Browse through the projects I've worked on.</p>
-</div>
-<div class="row">
+<section class="container-fluid py-5">
+    <div class="container" id="projects">
+        <div class="text-center">
+            <h2 class="display-5">My Projects</h2>
+            <p class="lead">Browse through the projects I've worked on.</p>
+        </div>
+        <div class="row">
 
-    <!-- BellApp -->
-    <div class="container my-4 col-12 col-md-4">
-        <div class="card shadow-sm project-card">
-            <div class="card-body">
-                <!-- Project Title -->
-                <h5 class="card-title">BellApp</h5>
+            <!-- BellApp -->
+            <div class="container my-4 col-12 col-md-4">
+                <div class="card shadow-sm project-card">
+                    <div class="card-body">
+                        <!-- Project Title -->
+                        <h5 class="card-title">BellApp</h5>
 
-                <!-- Short Description -->
-                <p class="card-text">BellApp is a mobile application for managing multiple bell systems, offering scheduling, real-time notifications, and custom melody creation, providing a modern solution for controlling bell systems.</p>
+                        <!-- Short Description -->
+                        <p class="card-text">BellApp is a mobile application for managing multiple bell systems, offering scheduling, real-time notifications, and custom melody creation, providing a modern solution for controlling bell systems.</p>
 
-                <!-- Recap Icons -->
-                <div class="mb-3">
-                    <i class="fa-solid fa-bell fa-lg"></i>
-                    <i class="fa-brands fa-android fa-lg"></i>
+                        <!-- Recap Icons -->
+                        <div class="mb-3">
+                            <i class="fa-solid fa-bell fa-lg"></i>
+                            <i class="fa-brands fa-android fa-lg"></i>
+                        </div>
+
+                        <!-- Collaborators -->
+                        <p>
+                            <i class="fa-solid fa-users"></i>
+                            Collaborator:
+                            <br>
+                            - Federico Giovanni Garau
+                        </p>
+
+                        <!-- GitHub Link -->
+                        <a href="https://github.com/FN-Org/BellApp" class="card-link text-dark" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i> GitHub Repository
+                        </a>
+
+                        <!-- Button to Project Page -->
+                        <a href="workinprogress.html" class="btn btn-dark float-end m-3">View Project</a>
+                    </div>
                 </div>
+            </div>
 
-                <!-- Collaborators -->
-                <p>
-                    <i class="fa-solid fa-users"></i>
-                    Collaborator:
-                    <br>
-                    - Federico Giovanni Garau
-                </p>
+            <!-- IoT System -->
+            <div class="container my-4 col-12 col-md-4">
+                <div class="card shadow-sm project-card">
+                    <div class="card-body">
+                        <!-- Project Title -->
+                        <h5 class="card-title">IoT System</h5>
 
-                <!-- GitHub Link -->
-                <a href="https://github.com/FN-Org/BellApp" class="card-link text-dark" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-github"></i> GitHub Repository
-                </a>
+                        <!-- Short Description -->
+                        <p class="card-text">IoT, hardware solution, for remotely controlling and scheduling bell systems via a mobile app, utilizing Wi-Fi communication with an ESP32 and STM32 board for real-time updates and notifications.</p>
 
-                <!-- Button to Project Page -->
-                <a href="workinprogress.html" class="btn btn-dark float-end m-3">View Project</a>
+                        <!-- Recap Icons -->
+                        <div class="mb-3">
+                            <i class="fa-solid fa-microchip fa-lg"></i>
+                            <i class="fa-solid fa-volume-high"></i>
+                            <i class="fa-solid fa-wifi"></i>
+                        </div>
+
+                        <!-- Collaborators -->
+                        <p>
+                            <i class="fa-solid fa-users"></i>
+                            Collaborator:
+                            <br>
+                            - Federico Giovanni Garau
+                        </p>
+
+                        <!-- GitHub Link -->
+                        <a href="https://github.com/FN-Org/BellsController-with-ESP32-STM32Nucleo" class="card-link text-dark" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i> GitHub Repository
+                        </a>
+
+                        <!-- Button to Project Page -->
+                        <a href="workinprogress.html" class="btn btn-dark float-end m-3">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UE_Chess -->
+            <div class="container my-4 col-12 col-md-4">
+                <div class="card shadow-sm project-card">
+                    <div class="card-body">
+                        <!-- Project Title -->
+                        <h5 class="card-title">Unreal Engine Chess</h5>
+
+                        <!-- Short Description -->
+                        <p class="card-text">Developed a full-featured chess game in Unreal Engine 5.2, integrating advanced AI using the Minimax algorithm with Alpha-Beta Pruning for strategic decision-making.</p>
+
+                        <!-- Recap Icons -->
+                        <div class="mb-3">
+                            <i class="fa-solid fa-laptop-code fa-lg"></i>
+                            <i class="fa-solid fa-chess-pawn fa-lg"></i>
+                        </div>
+
+                        <!-- GitHub Link -->
+                        <a href="https://github.com/nicolotrebino/UE_Chess" class="card-link text-dark" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i> GitHub Repository
+                        </a>
+
+                        <!-- Button to Project Page -->
+                        <a href="workinprogress.html" class="btn btn-dark float-end m-3">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WikiSAW -->
+            <div class="container my-4 col-12 col-md-4">
+                <div class="card shadow-sm project-card">
+                    <div class="card-body">
+                        <!-- Project Title -->
+                        <h5 class="card-title">WikiSAW</h5>
+
+                        <!-- Short Description -->
+                        <p class="card-text">E-learning platform with user roles for students, teachers, and admins, enabling course creation, management, and secure transactions.</p>
+
+                        <!-- Recap Icons -->
+                        <div class="mb-3">
+                            <i class="fa-brands fa-html5 fa-lg"></i>
+                            <i class="fa-brands fa-css3-alt fa-lg"></i>
+                            <i class="fa-brands fa-js fa-lg"></i>
+                            <i class="fa-brands fa-php fa-lg"></i>
+                        </div>
+
+                        <!-- Collaborators -->
+                        <p>
+                            <i class="fa-solid fa-users"></i>
+                            Collaborator:
+                            <br>
+                            - Federico Giovanni Garau
+                        </p>
+
+                        <!-- GitHub Link -->
+                        <a href="https://github.com/FN-Org/WikiSAW" class="card-link text-dark" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i> GitHub Repository
+                        </a>
+
+                        <!-- Button to Project Page -->
+                        <a href="workinprogress.html" class="btn btn-dark float-end m-3">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIOT -->
+            <div class="container my-4 col-12 col-md-4">
+                <div class="card shadow-sm project-card">
+                    <div class="card-body">
+                        <!-- Project Title -->
+                        <h5 class="card-title">RIOT-OS | Feedback Scheduler</h5>
+
+                        <!-- Short Description -->
+                        <p class="card-text">Developed and integrated a feedback scheduler into RIOT-OS, enhancing task prioritization and system performance for more efficient resource management.</p>
+
+                        <!-- Recap Icons -->
+                        <div class="mb-3">
+                            <i class="fa-solid fa-terminal"></i>
+                            <i class="fa-solid fa-computer"></i>
+                        </div>
+
+                        <!-- Collaborators -->
+                        <p>
+                            <i class="fa-solid fa-users"></i>
+                            Collaborator:
+                            <br>
+                            - Federico Giovanni Garau
+                        </p>
+
+                        <!-- GitHub Link -->
+                        <a href="https://github.com/FN-Org/RIOT/tree/scheduler_feedback" class="card-link text-dark" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i> GitHub Repository
+                        </a>
+
+                        <!-- Button to Project Page -->
+                        <a href="workinprogress.html" class="btn btn-dark float-end m-3">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- lisp_Interpreter -->
+            <div class="container my-4 col-12 col-md-4">
+                <div class="card shadow-sm project-card">
+                    <div class="card-body">
+                        <!-- Project Title -->
+                        <h5 class="card-title">lisp_Interpreter</h5>
+
+                        <!-- Short Description -->
+                        <p class="card-text">Developed a Lisp interpreter with unambiguous grammar that reads, processes, and executes code, including robust syntax error detection and clear feedback.</p>
+
+                        <!-- Recap Icons -->
+                        <div class="mb-3">
+                            <i class="fa-solid fa-terminal"></i>
+                            <i class="fa-solid fa-spell-check"></i>
+                            <i class="fa-solid fa-calculator"></i>
+                        </div>
+
+                        <!-- GitHub Link -->
+                        <a href="https://github.com/nicolotrebino/lisp_Interpreter" class="card-link text-dark" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i> GitHub Repository
+                        </a>
+
+                        <!-- Button to Project Page -->
+                        <a href="workinprogress.html" class="btn btn-dark float-end m-3">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vulnerability Detector -->
+            <div class="container my-4 col-12 col-md-4">
+                <div class="card shadow-sm project-card">
+                    <div class="card-body">
+                        <!-- Project Title -->
+                        <h5 class="card-title">Vulnerability Detector</h5>
+
+                        <!-- Short Description -->
+                        <p class="card-text">A Python-based vulnerability detector developed during the Hack4Ge hackathon, designed to identify SQL Injection and Server-Side Template Injection vulnerabilities in Python code. This tool won first prize for its innovation and effectiveness in improving code security.</p>
+
+                        <!-- Recap Icons -->
+                        <div class="mb-3">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <i class="fa-solid fa-server"></i>
+                            <i class="fa-brands fa-python"></i>
+                        </div>
+
+                        <!-- Collaborators -->
+                        <p>
+                            <i class="fa-solid fa-users"></i>
+                            Collaborator:
+                            <br>
+                            - Federico Giovanni Garau
+                            <br>
+                            - Alessandro Poggi
+                        </p>
+
+                        <!-- GitHub Link -->
+                        <a href="https://github.com/FN-Org/Hack4Ge" class="card-link text-dark" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i> GitHub Repository
+                        </a>
+
+                        <!-- Button to Project Page -->
+                        <a href="workinprogress.html" class="btn btn-dark float-end m-3">View Project</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
-    <!-- IoT System -->
-    <div class="container my-4 col-12 col-md-4">
-        <div class="card shadow-sm project-card">
-            <div class="card-body">
-                <!-- Project Title -->
-                <h5 class="card-title">IoT System</h5>
-
-                <!-- Short Description -->
-                <p class="card-text">IoT, hardware solution, for remotely controlling and scheduling bell systems via a mobile app, utilizing Wi-Fi communication with an ESP32 and STM32 board for real-time updates and notifications.</p>
-
-                <!-- Recap Icons -->
-                <div class="mb-3">
-                    <i class="fa-solid fa-microchip fa-lg"></i>
-                    <i class="fa-solid fa-volume-high"></i>
-                    <i class="fa-solid fa-wifi"></i>
-                </div>
-
-                <!-- Collaborators -->
-                <p>
-                    <i class="fa-solid fa-users"></i>
-                    Collaborator:
-                    <br>
-                    - Federico Giovanni Garau
-                </p>
-
-                <!-- GitHub Link -->
-                <a href="https://github.com/FN-Org/BellsController-with-ESP32-STM32Nucleo" class="card-link text-dark" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-github"></i> GitHub Repository
-                </a>
-
-                <!-- Button to Project Page -->
-                <a href="workinprogress.html" class="btn btn-dark float-end m-3">View Project</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- UE_Chess -->
-    <div class="container my-4 col-12 col-md-4">
-        <div class="card shadow-sm project-card">
-            <div class="card-body">
-                <!-- Project Title -->
-                <h5 class="card-title">Unreal Engine Chess</h5>
-
-                <!-- Short Description -->
-                <p class="card-text">Developed a full-featured chess game in Unreal Engine 5.2, integrating advanced AI using the Minimax algorithm with Alpha-Beta Pruning for strategic decision-making.</p>
-
-                <!-- Recap Icons -->
-                <div class="mb-3">
-                    <i class="fa-solid fa-laptop-code fa-lg"></i>
-                    <i class="fa-solid fa-chess-pawn fa-lg"></i>
-                </div>
-
-                <!-- GitHub Link -->
-                <a href="https://github.com/nicolotrebino/UE_Chess" class="card-link text-dark" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-github"></i> GitHub Repository
-                </a>
-
-                <!-- Button to Project Page -->
-                <a href="workinprogress.html" class="btn btn-dark float-end m-3">View Project</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- WikiSAW -->
-    <div class="container my-4 col-12 col-md-4">
-        <div class="card shadow-sm project-card">
-            <div class="card-body">
-                <!-- Project Title -->
-                <h5 class="card-title">WikiSAW</h5>
-
-                <!-- Short Description -->
-                <p class="card-text">E-learning platform with user roles for students, teachers, and admins, enabling course creation, management, and secure transactions.</p>
-
-                <!-- Recap Icons -->
-                <div class="mb-3">
-                    <i class="fa-brands fa-html5 fa-lg"></i>
-                    <i class="fa-brands fa-css3-alt fa-lg"></i>
-                    <i class="fa-brands fa-js fa-lg"></i>
-                    <i class="fa-brands fa-php fa-lg"></i>
-                </div>
-
-                <!-- Collaborators -->
-                <p>
-                    <i class="fa-solid fa-users"></i>
-                    Collaborator:
-                    <br>
-                    - Federico Giovanni Garau
-                </p>
-
-                <!-- GitHub Link -->
-                <a href="https://github.com/FN-Org/WikiSAW" class="card-link text-dark" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-github"></i> GitHub Repository
-                </a>
-
-                <!-- Button to Project Page -->
-                <a href="workinprogress.html" class="btn btn-dark float-end m-3">View Project</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- RIOT -->
-    <div class="container my-4 col-12 col-md-4">
-        <div class="card shadow-sm project-card">
-            <div class="card-body">
-                <!-- Project Title -->
-                <h5 class="card-title">RIOT-OS | Feedback Scheduler</h5>
-
-                <!-- Short Description -->
-                <p class="card-text">Developed and integrated a feedback scheduler into RIOT-OS, enhancing task prioritization and system performance for more efficient resource management.</p>
-
-                <!-- Recap Icons -->
-                <div class="mb-3">
-                    <i class="fa-solid fa-terminal"></i>
-                    <i class="fa-solid fa-computer"></i>
-                </div>
-
-                <!-- Collaborators -->
-                <p>
-                    <i class="fa-solid fa-users"></i>
-                    Collaborator:
-                    <br>
-                    - Federico Giovanni Garau
-                </p>
-
-                <!-- GitHub Link -->
-                <a href="https://github.com/FN-Org/RIOT/tree/scheduler_feedback" class="card-link text-dark" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-github"></i> GitHub Repository
-                </a>
-
-                <!-- Button to Project Page -->
-                <a href="workinprogress.html" class="btn btn-dark float-end m-3">View Project</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- lisp_Interpreter -->
-    <div class="container my-4 col-12 col-md-4">
-        <div class="card shadow-sm project-card">
-            <div class="card-body">
-                <!-- Project Title -->
-                <h5 class="card-title">lisp_Interpreter</h5>
-
-                <!-- Short Description -->
-                <p class="card-text">Developed a Lisp interpreter with unambiguous grammar that reads, processes, and executes code, including robust syntax error detection and clear feedback.</p>
-
-                <!-- Recap Icons -->
-                <div class="mb-3">
-                    <i class="fa-solid fa-terminal"></i>
-                    <i class="fa-solid fa-spell-check"></i>
-                    <i class="fa-solid fa-calculator"></i>
-                </div>
-
-                <!-- GitHub Link -->
-                <a href="https://github.com/nicolotrebino/lisp_Interpreter" class="card-link text-dark" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-github"></i> GitHub Repository
-                </a>
-
-                <!-- Button to Project Page -->
-                <a href="workinprogress.html" class="btn btn-dark float-end m-3">View Project</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Vulnerability Detector -->
-    <div class="container my-4 col-12 col-md-4">
-        <div class="card shadow-sm project-card">
-            <div class="card-body">
-                <!-- Project Title -->
-                <h5 class="card-title">Vulnerability Detector</h5>
-
-                <!-- Short Description -->
-                <p class="card-text">A Python-based vulnerability detector developed during the Hack4Ge hackathon, designed to identify SQL Injection and Server-Side Template Injection vulnerabilities in Python code. This tool won first prize for its innovation and effectiveness in improving code security.</p>
-
-                <!-- Recap Icons -->
-                <div class="mb-3">
-                    <i class="fa-solid fa-shield-halved"></i>
-                    <i class="fa-solid fa-server"></i>
-                    <i class="fa-brands fa-python"></i>
-                </div>
-
-                <!-- Collaborators -->
-                <p>
-                    <i class="fa-solid fa-users"></i>
-                    Collaborator:
-                    <br>
-                    - Federico Giovanni Garau
-                    <br>
-                    - Alessandro Poggi
-                </p>
-
-                <!-- GitHub Link -->
-                <a href="https://github.com/FN-Org/Hack4Ge" class="card-link text-dark" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-github"></i> GitHub Repository
-                </a>
-
-                <!-- Button to Project Page -->
-                <a href="workinprogress.html" class="btn btn-dark float-end m-3">View Project</a>
-            </div>
-        </div>
-    </div>
-</div>
 </section>
 
 <!-- Footer -->
-<div id="footer"></div>
+<div class="container-fluid bg-light">
+    <div class="container" id="footer"></div>
+</div>
 
 <!-- Script JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

@@ -73,7 +73,7 @@ body {
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
-    height: 100vh;
+    /*height: 100vh;*/
 }
 
 
@@ -98,21 +98,6 @@ i { color: var(--black)}
 
 .bold {
     font-weight: var(--fw-500);
-}
-
-/*-----------------------------------*\
-  # IMPORTANT CLASSES
-\*-----------------------------------*/
-
-.section {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1rem;
-    scroll-snap-align: start;
-    color: var(--black);
 }
 
 /*-----------------------------------*\
