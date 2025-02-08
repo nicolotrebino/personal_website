@@ -2,7 +2,7 @@
 
 This is my personal website, where I showcase my projects, skills, and interests. Built as a digital portfolio, it serves as a space to share my work and connect with others.  
 
-## 🌍 Live Demo  
+## 👀 Take a look
 🔗 [Visit My Website](https://nicolotrebino.com)  
 
 ## 🛠️ Technologies Used  
