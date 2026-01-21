@@ -112,6 +112,11 @@ i { color: var(--black)}
     background-color: transparent;
 }
 
+.navbar {
+    backdrop-filter: blur(10px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.5) !important;
+}
+
 /*-----------------------------------*\
   # FOOTER
 \*-----------------------------------*/

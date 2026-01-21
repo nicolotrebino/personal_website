@@ -1,0 +1,49 @@
+[debug] [2026-01-21T23:27:51.630Z] ----------------------------------------------------------------------
+[debug] [2026-01-21T23:27:51.637Z] Command:       /opt/homebrew/Cellar/node/23.11.0/bin/node /opt/homebrew/bin/firebase init
+[debug] [2026-01-21T23:27:51.637Z] CLI Version:   15.3.1
+[debug] [2026-01-21T23:27:51.637Z] Platform:      darwin
+[debug] [2026-01-21T23:27:51.637Z] Node Version:  v23.11.0
+[debug] [2026-01-21T23:27:51.637Z] Time:          Thu Jan 22 2026 00:27:51 GMT+0100 (Central European Standard Time)
+[debug] [2026-01-21T23:27:51.637Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/niky/Documents/1_projects/personal_website
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] 
+[debug] [2026-01-21T23:28:04.016Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-01-21T23:28:04.017Z] > authorizing via signed-in user (nicolo.trebino@gmail.com)
+[debug] [2026-01-21T23:28:04.018Z] Checked if tokens are valid: true, expires at: 1769040859863
+[debug] [2026-01-21T23:28:04.018Z] Checked if tokens are valid: true, expires at: 1769040859863
+[debug] [2026-01-21T23:28:04.020Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/personalwebsite-72c97 [none]
+[debug] [2026-01-21T23:28:04.449Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/personalwebsite-72c97 200
+[debug] [2026-01-21T23:28:04.449Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/personalwebsite-72c97 {"projectId":"personalwebsite-72c97","projectNumber":"546741005443","displayName":"personalWebsite","name":"projects/personalwebsite-72c97","resources":{"hostingSite":"personalwebsite-72c97"},"state":"ACTIVE","etag":"1_3c09b5cd-b549-4e51-8cb5-d661dae492e1"}
+[info] i  Using project personalwebsite-72c97 (personalWebsite) . 
+[info] 
+=== Hosting Setup
+[debug] [2026-01-21T23:28:04.465Z] Checked if tokens are valid: true, expires at: 1769040859863
+[debug] [2026-01-21T23:28:04.465Z] Checked if tokens are valid: true, expires at: 1769040859863
+[debug] [2026-01-21T23:28:04.466Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/personalwebsite-72c97 [none]
+[debug] [2026-01-21T23:28:04.757Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/personalwebsite-72c97 200
+[debug] [2026-01-21T23:28:04.757Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/personalwebsite-72c97 {"projectId":"personalwebsite-72c97","projectNumber":"546741005443","displayName":"personalWebsite","name":"projects/personalwebsite-72c97","resources":{"hostingSite":"personalwebsite-72c97"},"state":"ACTIVE","etag":"1_3c09b5cd-b549-4e51-8cb5-d661dae492e1"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 

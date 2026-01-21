@@ -1,26 +1,32 @@
 // home.js
 
-// Experience description
-document.querySelectorAll('.experiences-card').forEach(card => {
+// Handle experience click
+document.querySelectorAll('.timeline-card').forEach(card => {
     card.addEventListener('click', function(event) {
-        if (event.target.closest('.link-card')) {
+        // Evita che il click sui link (es. GitHub) apra/chiuda la card
+        if (event.target.closest('a')) {
             return;
         }
 
-        // Se non è un link, gestisci l'apertura della descrizione
         const description = this.querySelector('.description-card');
 
-        if (description.classList.contains('d-block')) {
-            description.classList.remove('d-block');
-            description.classList.add('d-none');
-        } else {
-            document.querySelectorAll('.description-card').forEach(desc => {
-                desc.classList.remove('d-block');
-                desc.classList.add('d-none');
-            });
+        // Controllo di sicurezza: procedi solo se la descrizione esiste
+        if (description) {
+            if (description.classList.contains('d-block')) {
+                // Se è aperta, chiudila
+                description.classList.remove('d-block');
+                description.classList.add('d-none');
+            } else {
+                // (Opzionale) Chiudi tutte le altre prima di aprire questa
+                document.querySelectorAll('.description-card').forEach(desc => {
+                    desc.classList.remove('d-block');
+                    desc.classList.add('d-none');
+                });
 
-            description.classList.remove('d-none');
-            description.classList.add('d-block');
+                // Apri questa
+                description.classList.remove('d-none');
+                description.classList.add('d-block');
+            }
         }
     });
 });
