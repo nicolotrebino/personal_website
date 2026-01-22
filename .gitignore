@@ -10,3 +10,6 @@ node_modules
 **/*.d.ts
 demo/.firebase/hosting.*.cache
 firebase.json
+.firebaserc
+
+pglite-debug.log
