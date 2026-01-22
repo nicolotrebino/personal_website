@@ -94,11 +94,6 @@ section {
     font-size: 0.9rem;
 }
 
-.description-card {
-    text-align: left;
-    padding: 2rem;
-}
-
 .link-card:hover {
     text-decoration: underline;
     text-decoration-color: black;
